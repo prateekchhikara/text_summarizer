@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Summarization</title>
+
+        <link rel="stylesheet" href="c.css">
+    </head>
+    <body bgcolor="#E6E6FA">
+
+        <h1 align='center'>Text Summarization</h1>
+        <p align='center'> reduces your time to read a document, while providing all the important information.</p>
+        <input type="image" src="../static/img1.jpg" alt="Submit" height="500px" width="100%">
+        <!-- Main Input For Receiving Query to our ML -->
+        <div align='center'>
+            <form action="{{ url_for('predict')}}"method="post">
+                <input type="text" name="Text" style="font-size:10pt;height:100px" size="150" display="block" placeholder="Text" required="required" />
+                <br>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Generate Summary</button>
+            </form>
+    
+        <br>
+        <br>
+        {{ prediction_text }}
+        </div>
+        
+
+        
+
+    </body>
+</html>
