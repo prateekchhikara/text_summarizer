@@ -1,5 +1,1 @@
-corpus
-tokenize
-stopwords
-word_tokenize
-sent_tokenize
+all
